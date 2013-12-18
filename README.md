@@ -1,4 +1,8 @@
-## Google+ PHP Quickstart
+## Google+ PHP Quickstart - PHP DATA
+
+Modified version of the PHP Quickstart from Google.
+Brings data into PHP which can be used for authentication, user profiles etc.
+
 
 
 Follow Steps 1 & 2 from the original documentation as follows:
