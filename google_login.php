@@ -1,6 +1,7 @@
 <?php
 /*
 	@Author Michael Gane - http://ganey.co.uk
+	Date: December 18th 2013 
 
 	The information in this document is mostly from https://developers.google.com and is licensed under
 	the Creative Commons Attribution 3.0 License, and the majority of code can be found within the 
@@ -35,7 +36,14 @@
 */
 require_once 'google_config.php';
 require_once __DIR__.'/gplus-quickstart-php/vendor/autoload.php'; //path to the autoload created with (php composer.phar install) from step 2 of the original documentation
-
+/*
+	instead of autoload, the following files can be used:
+	
+	require_once 'src/Google_Client.php';
+	require_once 'src/contrib/Google_PlusService.php';
+	
+	as these are all the current code requires.
+*/
 session_start();
 
 if (isset($_GET['state']) && $_SESSION['state'] != $_GET['state']) {
